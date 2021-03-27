@@ -1,0 +1,425 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin: 0 auto;
+    padding: 40px;
+}
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.modal__bg{
+    background: rgba(253,187,134,0.93);
+    height: 100vh;
+    position: absolute;
+    width: 1200px;
+}
+.modal__content{
+    background: #faebd7;
+    left: 44%;
+    padding: 40px;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+}
+
+body {
+  background-image: url(/images/haikei2.png);
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#after_login {
+  position: absolute;
+  z-index: 1;
+}
+
+body.back_login {
+  background-image: initial;
+  background-color: transparent;
+}
+
+.iframe_login {
+  width: 1200px;
+  height: 800px;
+  border: none;
+  position: absolute;
+  z-index: 2;
+  visibility: visible;
+}
+
+.topp {
+  width: 1200px;
+  height: 500px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul.hd_bs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ff7f7f;
+}
+
+li.hd_menu {
+  float: left;
+}
+
+ul.hd_bs li.hd_menu a {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+ul.hd_bs li.hd_menu a:hover:not(.now) {
+  background-color: #ffa8a8;
+}
+
+ul li a.active {
+  background: #ffa8a8;
+}
+
+li.hd_menu:last-child {
+  float: right;
+  background: #87ceeb;
+}
+
+.hd_bs ul {
+	display : none;
+	list-style: none;
+}
+
+.mypage_menu {
+	list-style: none;
+}
+
+input,button {
+  border-color: #c0d85c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.menu__item {
+  background: #ff7f7f;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1px;
+  position: relative;
+}
+.menu__item__link {
+  color: #fff;
+  display: block;
+  padding: 1rem;
+}
+
+.submenu {
+  background: #fff;
+  display: none;
+}
+.submenu__item {
+  border-bottom: 1px solid #5200b7;
+  color: #222;
+  padding: 1rem;
+  list-style: none;
+  float: left;
+  width: 25%;
+  background-color: white;
+
+}
+
+.recipe_img {
+  width: 480px;
+  height: 360px;
+  margin-left: 50px;
+  margin-right: 20px;
+  float: left;
+}
+
+.recipe_exp {
+  border-bottom: solid 2px #8b0000;
+}
+
+h2.hamburg_title {
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+h2.howto_title {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+table.tb_recipe {
+  width: 450px;
+  height: 300px;
+  margin-top: 10px;
+  background: white;
+  float: left;
+}
+
+table.tb_recipe,tr.tr_recipe,th,td {
+  border: solid 2px #ff7f7f;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 5px;
+  background: #ffa8a8
+}
+
+input.recipe_button {
+  cursor: pointer;
+}
+
+.amo_recipe {
+  text-align: right;
+}
+
+.cal_recipe {
+  text-align: right;
+  width: 120px;
+}
+
+.coment_bl {
+  position: relative;
+  display: inline-block;
+  margin: 1em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #00fa9a;
+  border-radius: 10px;
+}
+
+.coment_bl:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -25px;
+  border: 15px solid transparent;
+  border-right: 15px solid #00fa9a;
+}
+
+.coment_bl p {
+  margin: 0;
+  padding: 0;
+}
+
+.howto_recipe {
+  border: solid 2px #ffa8a8;
+  border-radius: 20px;
+  background: #ffefd5;
+  margin: 20px;
+  box-shadow: 2px 2px #a52a2a;
+}
+
+ul.recipe_process {
+  list-style-position: inside;
+  list-style: none;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+ul {
+  list-style-position: inside
+}
+
+.blog_title {
+  margin-bottom: 20px;
+}
+
+.blog_img {
+   width: 480px;
+  height: 360px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: solid 3px #ffa8a8;
+  float: left;
+}
+
+.like_button {
+  border: solid 2px;
+  border-color: #ffa8a8;
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 2px #a52a2a;
+  background-color: #ffdab9;
+  cursor: pointer;
+}
+
+span.font_js {
+  color: #ff00ff;
+  padding-left: 10px;
+}
+
+#like_js {
+  text-align: left;
+}
+
+.likeColor {
+	color: #ff00ff;
+}
+
+.katorari {
+  border: 0;
+  height: 50px;
+  background-image: url(/images/katorari2.png);
+}
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+ }
+
+.icon_title {
+  position: relative;
+  padding: 0.5em 0.5em 0.5em 1.5em;
+  line-height: 1.4;
+  color: #ff6a6a;
+  border-top: dotted 1px gray;
+  border-bottom: dotted 1px gray;
+  background: #fffff4;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.title_side {
+  font-size: 14px;
+  color: black;
+}
+
+.icon_title:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f138";
+  font-weight: 900;
+  position: absolute;
+  font-size: 1em;
+  left: 0.25em;
+  top: 0.5em;
+  color: #ff6a6a;
+}
+
+.new_blog,.like_blog,.blog_all {
+  line-height: 50px;
+}
+
+.search_result {
+  position: relative;
+  background: #f1f8ff;
+  padding: 20px;
+  border-left: solid 30px #5c9ee7;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.search_result:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f303";
+  position: absolute;
+  padding: 0em;
+  color: white;
+  font-weight: 900;
+  left: -25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.mypage_layout {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nabe {
+  width: 48px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: -4px;
+  margin-right: 5px;
+}
+
+.mypage_icon {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  background: white;
+  border: double 5px #b22222;
+  float: left;
+  margin: 10px 20px 10px 0px;
+}
+
+ul.mypage_log {
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  width: 800px;
+}
+
+li.border {
+  border-bottom: dashed 2px orange;
+}
+
+li.float {
+  float: left;
+  padding-right: 90px;
+}
+
+form dl dt {
+  width: 165px;
+  padding: 10px 0;
+  float: left;
+  clear: both;
+}
+
+form dl dd {
+  padding: 10px 0;
+}
+
+a.title {
+	position: absolute;
+	left: 450px;
+}
+
+.likeColor {
+	position: absolute;
+	left: 450px;
+}
+
+a.title2 {
+	position: absolute;
+	left: 600px;
+}
