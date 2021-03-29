@@ -56,7 +56,7 @@
 	<form:button >登録</form:button>
 	</form:form>
 	<br>
-	<a href="login">ログイン画面に戻る</a>
+	<a href="/">ログイン画面に戻る</a>
 
 
 	<hr class="katorari">
