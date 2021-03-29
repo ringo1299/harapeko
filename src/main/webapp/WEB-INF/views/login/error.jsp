@@ -23,7 +23,7 @@
 	<div id="header">
 		<img src="/images/logo.png">
 	<p>${errorMessage}</p>
-		<a href="login">ログイン画面に戻る</a>
+		<a href="/">ログイン画面に戻る</a>
 	</div>
 
 </body>
