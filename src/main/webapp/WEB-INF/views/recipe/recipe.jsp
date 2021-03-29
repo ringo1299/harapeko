@@ -35,7 +35,7 @@
 				<c:out value="${overview.menu_name}" />
 			</h2>
 			<hr>
-			<img src="/images/no_image.png" class="recipe_img">
+			<img src="/images/hamburg2.jpg" class="recipe_img">
 			<p>
 				<c:out value="${overview.comment}" />
 				<br> <span class="recipe_exp">所要時間 <c:out
