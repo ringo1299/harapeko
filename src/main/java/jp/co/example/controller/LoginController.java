@@ -28,7 +28,7 @@ public class LoginController {
 	private User userData;
 
 	//ログイン画面表示
-	@RequestMapping("/login")
+	@RequestMapping("/")
 	public String iframeLogin(@ModelAttribute("login") User user, Model model) {
 		model.addAttribute("loginMessage", "ログインしてください。未登録の場合は「新規登録」をclick！");
 		return "/login/login";
