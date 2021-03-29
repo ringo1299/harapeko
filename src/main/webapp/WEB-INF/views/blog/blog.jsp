@@ -37,7 +37,7 @@
 <h3>${message }</h3>
 <p>${blogData.dateString } 投稿</p>
 <h1>${blogData.title }</h1>
-<img src="/images/hamburg2.jpg" class="blog_img">
+<img src="/images/no_image.png" class="blog_img">
 <p class="blog_main">${blogData.body }</p>
 </div>
 
