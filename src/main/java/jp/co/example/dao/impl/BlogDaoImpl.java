@@ -72,11 +72,11 @@ public class BlogDaoImpl implements BlogDao {
 
 	@Override
 	public List<Blog> getNewBlogData(Integer user_id) {
-		String sql = "SELECT * FROM blog_list WHERE user_id = :user_id ORDER BY post_day DESC LIMIT 5 ";
+		String sql = "SELECT * FROM blog_list WHERE blog_user_id = :blog_user_id ORDER BY post_day DESC LIMIT 5 ";
 
 		try {
 			MapSqlParameterSource param = new MapSqlParameterSource();
-			param.addValue("user_id", user_id);
+			param.addValue("blog_user_id", user_id);
 			return jdbcTemplate.query(sql, param, new BeanPropertyRowMapper<Blog>(Blog.class));
 		} catch (EmptyResultDataAccessException e) {
 			return null;
